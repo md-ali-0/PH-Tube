@@ -25,7 +25,9 @@
                 extend: {
                     colors: {
                         primary: '#FF1F3D',
+                        secondary: '#25252533',
                         dark: '#171717',
+                        dark_2: '#171717B2',
                     }
                 }
             }
@@ -35,12 +37,42 @@
 
 <body class="font-inter">
     <!-- Header Section -->
-    <header>
-
+    <header class="container mx-auto">
+        <div class="flex justify-between py-5 px-3">
+            <img class="w-auto" src="images/logo.png" alt="">
+            <button class="bg-secondary rounded-md py-1 px-3">Sort by view</button>
+            <button class="bg-primary text-white rounded-md py-1 px-3">Blog</button>
+        </div>
+        <hr>
     </header>
     <!-- Main App -->
-    <main>
+    <main class="container mx-auto px-3">
+        <!-- Categoris -->
+        <div class="flex justify-center gap-3 my-3">
+            <button class="bg-primary text-white rounded-md py-1 px-3">All</button>
+            <button class="bg-secondary rounded-md py-1 px-3">Music</button>
+            <button class="bg-secondary rounded-md py-1 px-3">Comedy</button>
+            <button class="bg-secondary rounded-md py-1 px-3">Drawing</button>
+        </div>
 
+        <!-- Videos -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <!-- Video Card -->
+            <div class="">
+                <img class="rounded-lg mx-auto" src="images/Rectangle 1.png" alt="">
+                <div class="flex items-start gap-2 my-2">
+                    <img class="w-10 rounded-full" src="images/f7c8a8ca2f16c4cbfd746902cb0f8d57.jpeg" alt="">
+                    <div>
+                        <h1 class="font-bold">Building a Winning UX Strategy Using the Kano Model</h1>
+                        <div class="flex items-center gap-2">
+                            <h4 class="text-sm text-dark_2">Awlad Hossain</h4>
+                            <img src="/images/fi_10629607.svg" alt="">
+                        </div>
+                        <p class="text-sm text-dark_2">91K views</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Scripts -->
