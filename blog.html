@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube -Blog</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-inter {
+            font-family: 'Inter', 'sans-serif';
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF1F3D',
+                        secondary: '#25252533',
+                        dark: '#171717',
+                        dark_2: '#171717B2',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-inter">
+    <!-- Header Section -->
+    <header class="container mx-auto">
+        <div class="flex justify-between py-5 px-3">
+            <a href="/index.html">
+                <img class="w-32 align-baseline" src="images/logo.png" alt="">
+            </a>
+            <a href="/blog.html" class="bg-primary text-white text-sm md:text-base rounded-md py-1 px-3">Blog</a>
+        </div>
+        <hr>
+    </header>
+
+    <!-- Main App -->
+    <main class="container mx-auto px-3">
+        <!-- Blog Posts -->
+        <div class="my-3 mx-5">
+            <div class="shadow-lg rounded-lg p-3">
+                <h3 class="text-3xl font-bold py-2">Discuss the scope of var, let, and const</h3>
+                <hr>
+                <p class="text-xl text-dark_2 py-2">The scope of a variable refers to the part of the code in which the variable can be used. A var
+                    declaration can be globally scoped or function scoped. When a variable is declared outside a function
+                    using var , the variable is in global scope. That is, any variable declared outside a function block
+                    using the var keyword can be used in the entire window.</p>
+            </div>
+            <div class="shadow-lg rounded-lg p-3">
+                <h3 class="text-3xl font-bold py-2">Tell us the use cases of null and undefined</h3>
+                <hr>
+                <p class="text-xl text-dark_2 py-2"><b>Null:</b> It is the intentional absence of the value. It is one of the primitive values of JavaScript. <br><b>Undefined:</b>
+
+                    When variable is not assigned a value</p>
+            </div>
+            <div class="shadow-lg rounded-lg p-3">
+                <h3 class="text-3xl font-bold py-2">What do you mean by REST API?</h3>
+                <hr>
+                <p class="text-xl text-dark_2 py-2">REST is an architectural style for designing APIs over the HTTP protocol. Its main advantage is its great flexibility.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
